@@ -1,0 +1,360 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\source\\repos\\HomeFlex\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\views\\property\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\views\\property\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\views\\property\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\views\\property\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\views\\property\\managerental.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\views\\property\\managerental.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\views\\shared\\_accountlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\views\\shared\\_accountlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\viewmodels\\propertyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\viewmodels\\propertyviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\viewmodels\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\viewmodels\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\models\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\models\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\models\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|c:\\users\\user\\source\\repos\\homeflex\\homeflex\\models\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86AEFD4E-A378-493D-8791-EFD0C3043D90}|HomeFlex\\HomeFlex.csproj|solutionrelative:homeflex\\models\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Views\\User\\Profile.cshtml",
+              "RelativeDocumentMoniker": "HomeFlex\\Views\\User\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Views\\User\\Profile.cshtml",
+              "RelativeToolTip": "HomeFlex\\Views\\User\\Profile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T00:27:25.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "HomeFlex\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "HomeFlex\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T00:27:13.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "HomeFlex\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "HomeFlex\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAwEYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T00:03:03.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Views\\Property\\Details.cshtml",
+              "RelativeDocumentMoniker": "HomeFlex\\Views\\Property\\Details.cshtml",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Views\\Property\\Details.cshtml",
+              "RelativeToolTip": "HomeFlex\\Views\\Property\\Details.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T11:56:56.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "HomeFlex\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "HomeFlex\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAIwKEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T23:10:37.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BookingViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\ViewModels\\BookingViewModel.cs",
+              "RelativeDocumentMoniker": "HomeFlex\\ViewModels\\BookingViewModel.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\ViewModels\\BookingViewModel.cs",
+              "RelativeToolTip": "HomeFlex\\ViewModels\\BookingViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T21:30:22.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Program.cs",
+              "RelativeDocumentMoniker": "HomeFlex\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Program.cs",
+              "RelativeToolTip": "HomeFlex\\Program.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAewEUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T21:07:25.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PropertyController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Controllers\\PropertyController.cs",
+              "RelativeDocumentMoniker": "HomeFlex\\Controllers\\PropertyController.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Controllers\\PropertyController.cs",
+              "RelativeToolTip": "HomeFlex\\Controllers\\PropertyController.cs",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAAAMwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T07:54:49.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Property.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Models\\Property.cs",
+              "RelativeDocumentMoniker": "HomeFlex\\Models\\Property.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Models\\Property.cs",
+              "RelativeToolTip": "HomeFlex\\Models\\Property.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T11:01:40.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_AccountLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Views\\Shared\\_AccountLayout.cshtml",
+              "RelativeDocumentMoniker": "HomeFlex\\Views\\Shared\\_AccountLayout.cshtml",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Views\\Shared\\_AccountLayout.cshtml",
+              "RelativeToolTip": "HomeFlex\\Views\\Shared\\_AccountLayout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwEUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T18:20:00.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ManageRental.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Views\\Property\\ManageRental.cshtml",
+              "RelativeDocumentMoniker": "HomeFlex\\Views\\Property\\ManageRental.cshtml",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Views\\Property\\ManageRental.cshtml",
+              "RelativeToolTip": "HomeFlex\\Views\\Property\\ManageRental.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAACaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T09:44:30.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Views\\Property\\Create.cshtml",
+              "RelativeDocumentMoniker": "HomeFlex\\Views\\Property\\Create.cshtml",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Views\\Property\\Create.cshtml",
+              "RelativeToolTip": "HomeFlex\\Views\\Property\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T17:53:33.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "HomeFlex\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "HomeFlex\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T00:04:01.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "HomeFlex\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "HomeFlex\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T00:05:04.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PropertyViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\ViewModels\\PropertyViewModel.cs",
+              "RelativeDocumentMoniker": "HomeFlex\\ViewModels\\PropertyViewModel.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\ViewModels\\PropertyViewModel.cs",
+              "RelativeToolTip": "HomeFlex\\ViewModels\\PropertyViewModel.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA+wBwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T23:37:39.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProfileViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\ViewModels\\ProfileViewModel.cs",
+              "RelativeDocumentMoniker": "HomeFlex\\ViewModels\\ProfileViewModel.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\ViewModels\\ProfileViewModel.cs",
+              "RelativeToolTip": "HomeFlex\\ViewModels\\ProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T23:09:40.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "HomeFlex\\Models\\Booking.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Models\\Booking.cs",
+              "RelativeToolTip": "HomeFlex\\Models\\Booking.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA0wA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T21:31:26.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "HomeFlex\\Models\\Users.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Models\\Users.cs",
+              "RelativeToolTip": "HomeFlex\\Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T15:47:17.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Location.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Models\\Location.cs",
+              "RelativeDocumentMoniker": "HomeFlex\\Models\\Location.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Models\\Location.cs",
+              "RelativeToolTip": "HomeFlex\\Models\\Location.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T15:44:17.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Image.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Models\\Image.cs",
+              "RelativeDocumentMoniker": "HomeFlex\\Models\\Image.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\HomeFlex\\HomeFlex\\Models\\Image.cs",
+              "RelativeToolTip": "HomeFlex\\Models\\Image.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T07:48:34.275Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

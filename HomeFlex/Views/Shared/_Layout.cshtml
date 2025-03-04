@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HomeFlex</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/HomeFlex.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="background-color:black;">
+            <div class="container">
+                <a asp-controller="Home" asp-action="Index" class="navbar-brand">Home Flex</a>
+                <button type="button"
+                        class="navbar-toggler"
+                        data-bs-target="#navbarNav"
+                        data-bs-toggle="collapse"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mx-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link text-white" asp-controller="Home" asp-action="About">About</a>
+                        </li>-->
+                        @if (User.IsInRole("Owner"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-controller="Property" asp-action="Create">Add Apartment</a>
+                            </li>
+                        }
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-controller="Property" asp-action="ManageRental" asp-route-id="1">Manage Rentals</a>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link text-white" asp-controller="Home" asp-action="Contact">Contact</a>
+                        </li>-->
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-controller="Account" asp-action="Login">Log In</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Account
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" asp-controller="Account" asp-action="Index" asp-route-id="-1">Profile</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" asp-controller="Account" asp-action="Logout">Logout</a></li>
+                                </ul>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+       @RenderBody()
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <footer class="footer">
+            <div class="container1">
+                <div class="row1">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">Payment status</a></li>
+                            <li><a href="#">payment Method</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>House Rent</h4>
+                        <ul>
+                            <li><a href="#">Flat</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Sublet</a></li>
+                            <li><a href="#">Hotel</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

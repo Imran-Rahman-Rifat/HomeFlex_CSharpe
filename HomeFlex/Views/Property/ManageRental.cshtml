@@ -1,0 +1,135 @@
+﻿@model IEnumerable<Property>
+
+@{
+    ViewBag.Title = "Create Property";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Rentals</title>
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    </br> </br> </br>
+    <div class="container my-4">
+        <form method="get" asp-action="ManageRental">
+            <div class="row mb-3">
+                <div class="col-md-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" class="form-control" id="location" name="location" value="@ViewData["location"]">
+                </div>
+                <div class="col-md-3">
+                    <label for="priceRange" class="form-label">Price Range</label>
+                    <input type="number" class="form-control" id="priceRangeMin" name="price_min" value="@ViewData["price_min"]">
+                </div>
+                <div class="col-md-3">
+                    <label class="invisible">Placeholder</label>
+                    <input type="number" class="form-control mt-2" id="priceRangeMax" name="price_max" value="@ViewData["price_max"]">
+                </div>
+                <div class="col-md-3">
+                    <label for="whomToRent" class="form-label">Whom to Rent</label>
+                    <select class="form-control" id="whomToRent" name="whom_to_rent">
+                        <option value="">Select an option</option>
+                        <option value="Bachelor" selected="@((string)ViewData["whom_to_rent"] == "Bachelor")">Bachelor</option>
+                        <option value="Family" selected="@((string)ViewData["whom_to_rent"] == "Family")">Family</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="totalRoom" class="form-label">Total Room</label>
+                    <input type="number" class="form-control" id="totalRoom" name="total_room" value="@ViewData["total_room"]">
+                </div>
+                <div class="col-md-3">
+                    <label for="sqft" class="form-label">Square Feet</label>
+                    <input type="number" class="form-control" id="sqft" name="sqft" value="@ViewData["sqft"]">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 align-self-end">
+                    <button type="submit" class="btn btn-primary mt-2">Apply Filters</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <form method="get" asp-action="ManageRental">
+                    <label for="sort" class="form-label">Sort By:</label>
+                    <select class="form-control d-inline-block w-auto" id="sort" name="sort" onchange="this.form.submit()">
+                        <option value="newest" selected="@((string)ViewData["sort"] == "newest")">Newest</option>
+                        <option value="oldest" selected="@((string)ViewData["sort"] == "oldest")">Oldest</option>
+                        <option value="price_asc" selected="@((string)ViewData["sort"] == "price_asc")">Price (Low to High)</option>
+                        <option value="price_desc" selected="@((string)ViewData["sort"] == "price_desc")">Price (High to Low)</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 d-grid gap-5">
+        <div class="row g-4">
+            @if (Model != null)
+            {
+                var cnt = 0;
+                var imageSources = new List<string>
+            {
+            "~/wwwroot/images/1.jpeg",
+            "~/images/2.jpeg",
+            "~/images/3.jpeg",
+            "~/images/4.jpeg",
+            "~/images/5.jpeg"
+            };
+                @foreach (var property in Model)
+                {
+                    var imageSrc = imageSources[cnt % imageSources.Count];
+                    cnt++;
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                @if(cnt == 1){
+                                    <a href="@Url.Action("Details", "Property", new { id = property.Id })"><img class="img-fluid" src="~/images/property-3.jpg" alt=""></a>
+                                }
+                                @if (cnt == 2) {
+                                    <a href="@Url.Action("Details", "Property", new { id = property.Id })"><img class="img-fluid" src="~/images/property-6.jpg" alt=""></a>
+                                }
+                                @if (cnt == 3)
+                                {
+                                    <a href="@Url.Action("Details", "Property", new { id = property.Id })"><img class="img-fluid" src="~/images/property-5.jpg" alt=""></a>
+                                }
+                                @if (cnt == 4)
+                                {
+                                    <a href="@Url.Action("Details", "Property", new { id = property.Id })"><img class="img-fluid" src="~/images/3.jpg" alt=""></a>
+                                    cnt = 0;
+                                }
+                                
+                                <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
+                                <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Apartment</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-primary mb-3">@property.Price.ToString("C")</h5>
+                                <a class="d-block h5 mb-2" href="@Url.Action("Details", "Property", new { id = property.Id })">@property.Title</a>
+                                <p><i class="fa fa-map-marker-alt text-primary me-2"></i>@property.Location.Thana, @property.Location.District</p>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>@property.Sqft.ToString() sqft</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>@property.BedroomNum.ToString() Bed</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>@property.BathroomNum.ToString() Bath</small>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p>No properties available.</p>
+            }
+        </div>
+    </div>
+</body>
+</html>

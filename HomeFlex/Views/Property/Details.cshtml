@@ -1,0 +1,243 @@
+﻿@model HomeFlex.Models.Property
+@inject Microsoft.AspNetCore.Identity.UserManager<HomeFlex.Models.Users> UserManager
+
+@{
+    if (Model == null)
+    {
+        throw new InvalidOperationException("Model cannot be null");
+    }
+
+    ViewBag.Title = "Apartment Details";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+
+    var loggedInUserId = UserManager.GetUserId(User);
+    var isOwner = loggedInUserId == Model.OwnerId;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    </br> </br> </br>
+    <div class="container my-4">
+        <h1 class="text-center mb-4">Apartment Details</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <p>Added By <a href="@Url.Action("Profile", "User", new { id = Model.OwnerId })" class="custom-added-by-link">@Model.OwnerId</a></p>
+                <div id="apartmentCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        @if (Model.Images != null && Model.Images.Any())
+                        {
+                            var isActive = true;
+                            foreach (var image in Model.Images)
+                            {
+                                <div class="carousel-item @(isActive ? "active" : "")">
+                                    <img src="@Url.Content(image.ImagePath)" class="d-block w-100" alt="@image.ImageType">
+                                </div>
+                                isActive = false;
+                            }
+                        }
+                        else
+                        {
+                            <div class="carousel-item active">
+                                <img src="~/images/property-3.jpg" class="d-block w-100" alt="No Image Available">
+                            </div>
+                        }
+                    </div>
+                    <a class="carousel-control-prev" href="#apartmentCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#apartmentCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    @if (!isOwner)
+                    {
+                        <form method="post" asp-action="RequestBooking" asp-controller="Property">
+                            <input type="hidden" name="propertyId" value="@Model.Id" />
+                            <button class="btn btn-booking mt-3" type="submit">Request Booking</button>
+                        </form>
+                    }
+                </div>
+            </div>
+            
+
+            <div class="col-md-4">
+                <div class="card">
+                    @if (Model != null)
+                    {
+                        <div class="card-body">
+                            <h2 class="card-title">@Model.Title</h2>
+                            <h4 class="text-muted">Monthly Rental Price: @Model.Price</h4>
+                            <p>Available Date: <strong>@Model.AvailableDate.ToShortDateString() </strong></p>
+                            <p>Square Feet: <strong>@Model.Sqft sqft</strong></p>
+                            <p>Description: <strong>@Model.ShortDescription</strong></p>
+                            <p>Total Rooms: <strong>@Model.TotalRoom</strong></p>
+                            <p>Bedrooms: <strong>@Model.BedroomNum</strong></p>
+                            <p>Bathrooms: <strong>@Model.BathroomNum</strong></p>
+                            <p>Lift Facility: <strong>@Model.Lift</strong></p>
+                            <p>Whom to Rent: <strong>@Model.WhomToRent</strong></p>
+                            <p>Floor No: <strong>@Model.FloorNo</strong></p>
+                            @if (isOwner)
+                            {
+                                <button class="btn btn-primary btn-edit" data-toggle="modal" data-target="#editProfileModal">Edit Apartment Information</button>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p>Model is null.</p>
+                    }
+                    <hr>
+                    <h4>Location</h4>
+                    <p>Division: <strong>@Model.Location?.Division</strong></p>
+                    <p>District: <strong>@Model.Location?.District</strong></p>
+                    <p>Thana: <strong>@Model.Location?.Thana</strong></p>
+                    <p>Ward No: <strong>@Model.Location?.WardNo</strong></p>
+                    <p>House No: <strong>@Model.Location?.HouseNo</strong></p>
+                    <p>Address: <strong>@Model.Location?.Address</strong></p>
+                    @if (isOwner)
+                    {
+                        <button class="btn btn-primary btn-edit" data-toggle="modal" data-target="#editLocationModal">Edit Location Information</button>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    @if (isOwner)
+    {
+        <!-- Edit apartment Modal -->
+        <div class="modal fade" id="editProfileModal" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editProfileModalLabel">Edit Apartment Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post" asp-action="UpdateProperty" asp-controller="Property">
+                            <input type="hidden" name="Id" value="@Model.Id" />
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="text" name="Title" class="form-control" id="title" value="@Model.Title">
+                            </div>
+                            <div class="form-group">
+                                <label for="rentalPrice">Monthly Rental Price</label>
+                                <input type="text" name="Price" class="form-control" id="rentalPrice" value="@Model.Price">
+                            </div>
+                            <div class="form-group">
+                                <label for="availableDate">Available Date</label>
+                                <input type="date" name="AvailableDate" class="form-control" id="availableDate" value="@Model.AvailableDate.ToString("yyyy-MM-dd")">
+                            </div>
+                            <div class="form-group">
+                                <label for="squareFeet">Square Feet</label>
+                                <input type="number" name="Sqft" class="form-control" id="squareFeet" value="@Model.Sqft">
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Description</label>
+                                <textarea class="form-control" name="ShortDescription" id="description" rows="3">@Model.ShortDescription</textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="totalRooms">Total Rooms</label>
+                                <input type="number" name="TotalRoom" class="form-control" id="totalRooms" value="@Model.TotalRoom">
+                            </div>
+                            <div class="form-group">
+                                <label for="bedrooms">Bedrooms</label>
+                                <input type="number" name="BedroomNum" class="form-control" id="bedrooms" value="@Model.BedroomNum">
+                            </div>
+                            <div class="form-group">
+                                <label for="bathrooms">Bathrooms</label>
+                                <input type="number" name="BathroomNum" class="form-control" id="bathrooms" value="@Model.BathroomNum">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputLiftFacilities">Lift Facilities</label>
+                                <select class="form-control" id="inputLiftFacilities" name="LiftFacility">
+                                    <option value="@Model.Lift">@Model.Lift</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputWhomToRent">Whom to Rent</label>
+                                <select class="form-control" id="inputWhomToRent" name="WhomToRent">
+                                    <option value="@Model.WhomToRent">@Model.WhomToRent</option>
+                                    <option value="Family">Family</option>
+                                    <option value="Bachelor">Bachelor</option>
+                                    <option value="Any">Any</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="floorNo">Floor No</label>
+                                <input type="number" name="FloorNo" class="form-control" id="floorNo" value="@Model.FloorNo">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edit Location Modal -->
+        <div class="modal fade" id="editLocationModal" tabindex="-1" aria-labelledby="editLocationModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editLocationModalLabel">Edit Location Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post" asp-action="UpdateLocation" asp-controller="Property">
+                            <input type="hidden" name="PropertyId" value="@Model.Id" />
+                            <div class="form-group">
+                                <label for="division">Division</label>
+                                <input type="text" name="Division" class="form-control" id="division" value="@Model.Location?.Division">
+                            </div>
+                            <div class="form-group">
+                                <label for="district">District</label>
+                                <input type="text" name="District" class="form-control" id="district" value="@Model.Location?.District">
+                            </div>
+                            <div class="form-group">
+                                <label for="thana">Thana</label>
+                                <input type="text" name="Thana" class="form-control" id="thana" value="@Model.Location?.Thana">
+                            </div>
+                            <div class="form-group">
+                                <label for="wardNo">Ward No</label>
+                                <input type="number" name="WardNo" class="form-control" id="wardNo" value="@Model.Location?.WardNo">
+                            </div>
+                            <div class="form-group">
+                                <label for="houseNo">House No</label>
+                                <input type="text" name="HouseNo" class="form-control" id="houseNo" value="@Model.Location?.HouseNo">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" name="Address" class="form-control" id="address" value="@Model.Location?.Address">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</body>
+</html>
